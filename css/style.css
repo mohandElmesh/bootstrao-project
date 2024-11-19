@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.modal-backdrop.show{
+    z-index: -1;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+/* ///////////////////////////////////////////////////////////************************************************************* */
+/* cursoal */
+.carousel-item img{
+    height: 100vh;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+    height: 200px;
+}
+/* ///////////////////////// ************************************************************************************************/
+/* icons at cursoal */
+.icons{
+    right: 50px;
+    top: 200px;
+}
+.i1-cursol{
+    font-size: 42px;
+    width: 55px;
+    height: 55px;
+    padding: 1px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    color: beige;
+}
+.icons .icon-cursol{
+ margin-top: 30px;
+ background-color:rgb(59, 48, 35);
+ border-radius: 7px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+h3{
+  padding-bottom: 10px;
+}
+.p1{
+    padding-bottom: 10px;
+}
+.card{
+    height: 250px;
+    padding: 20px;
+}
+.card-title{
+    padding-bottom: 15px;
+}
+.card-text{
+    padding-bottom: 10px;
+}
+.card-body2{
+    text-align: center;
+}
+.card-title2{
+    padding-top: 50px;
+   
+}
+.card-body3{
+    text-align: center;
+}
+.card3{
+    height: 80px;
+    border-radius: 17px;
+}
+.card-title3{
+    padding-top: 18px;  
+}
+.card4{
+    margin-top: 1px;
+    height: 300px;
+    border-radius: 7px;
+}
+.card-title4{
+    padding-top: 18px;
+    display: inline-block; 
+    padding-left: 50px;
+}
+/* //////////////////////////////////////////*********************************************************************************** */
+.accordion-header .accordion-button{
+    font-size: 30px;
+}
+/* ////////////////////////////////**************************************************************************************** */
+.card5{
+    width: 100%;
+    height: 250px;
+    background-image: url("https://img.freepik.com/free-photo/minimal-living-room-interior-design-with-leaf-shadow-wall_53876-128644.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_siglip");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* //////////////////////////////////////////////////////**************************************************************** */
+.row-card{
+    position: relative;
+}
+.div11::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+}
+.div11:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.div11::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+
+}
+.div11:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.first-three-salons{
+    width: 100%;
+    height: 500px;
+}
+.salons{
+    width:30%;
+    height: 100%;
+}
+@media (max-width:768px){
+    .first-three-salons{
+        height: auto;
+    }
+    .salons{
+        width: 100%;
+        height: 500px;
+        margin-left: 10px;
+    }
+
+}
+/* ////////////////////////// */
+.card6{
+    width: 100%;
+    height: 310px;
+    background-image: url("https://img.freepik.com/premium-photo/comfortable-bean-bag-chair_1164885-7306.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 20px;
+}
+/* //////////////////////////////////////////////////////////******************************************************** */
+.parent-overlay{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    
+}
+.overlay1,.overlay2,.overlay3{
+    position: relative;
+    width: 31%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.overlay1{
+    background-image: url("https://img.freepik.com/free-photo/picture-frame-by-velvet-armchair_53876-132788.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+}
+.overlay2{
+    background-image: url("https://img.freepik.com/free-photo/picture-frame-with-abstract-art-by-pink-velvet-armchair_53876-128125.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+}
+.overlay3{
+    background-image: url("https://img.freepik.com/premium-photo/fashionable-modern-gray-chair-with-wooden-legs-ottoman-interior-furniture-interior-items-modern-designer-chair-stylish-minimalist-interior_106117-264.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+}
+@media (max-width:768px){
+    .parent-overlay{
+        height: auto;
+    }
+    .overlay1{
+        width: 100%;
+        height: 550px;
+        margin-left: 14px;
+    }
+    .overlay2{
+        width: 100%;
+        height: 550px;
+        margin-left: 14px;
+    }
+    .overlay3{
+        width: 100%;
+        height: 550px;
+        margin-left: 14px;
+    }
+}
+.overlay1:hover .overlay {
+  background-color: rgba(5, 54, 95, 0.7);
+}
+.overlay2:hover .overlay {
+    background-color: rgba(5, 54, 95, 0.7);
+}
+  .overlay3:hover .overlay {
+    background-color: rgba(5, 54, 95, 0.7);
+}
+.overlay1:hover,.overlay2:hover,.overlay3:hover {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+/* /////////////////////////////***********************************************************************************************/
+.parent-model{
+    width: 100%;
+    height:400px;
+    background-color:rgb(117, 102, 84);
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px; 
+    margin-top: 15px;
+}
+.model-info{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    padding: 50px 0px 0px 35px;
+}
+.model-img,.model-img2{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 8px; 
+    
+}
+.model-img{
+    background-image: url("https://img.freepik.com/premium-photo/luxury-apartments-hotel-with-living-room-dining-room-sofa-bed-tv-stand-dining-table-classic-interior-with-white-walls-3d-rendering_295714-3931.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 23% 100%);
+}
+.model-img2{
+    background-image: url("https://img.freepik.com/free-photo/beautiful-home-with-healthy-plants_23-2149383711.jpg?ga=GA1.1.2034611486.1730305994&semt=ais_hybrid");
+    clip-path: polygon(0 0, 90% 0, 77% 100%, 0 100%);
+}
+@media (max-width: 768px) {
+    .parent-model {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .model-img,.model-img2{
+        width: 100%;
+        height: 200px;
+        clip-path: none;
+        order: 1; 
+    }
+    .model-info {
+        width: 100%;
+        height: 250px;
+        padding: 15px;
+        order: 2;
+        overflow: hidden;
+    }
+}
+.model-line{
+    width: 80px;
+    height: 4px;
+    background-color: azure;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+.parent-model:hover .model-line{
+    width: 110px;
+    transition: 0.6s;
+}
+.model-btn1,.model-btn2,.model-btn3{
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    background-color: azure;
+    text-align: center;
+    border-radius: 2px;
+    
+}
+.model-btn2{
+    margin: 0px 15px;
+}
+.model-btn1:hover{
+    background-color: gray;
+}
+.model-btn2:hover{
+    background-color: gray;
+}
+.model-btn3:hover{
+    background-color:gray;
+}
+.model-p{
+    margin-bottom: 80px;
+}
+/* ///////////////////////////////////********************************************************************************************** */
+
+.social{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.social1{
+    width: 20%;
+    height: 100%;
+}
+@media (max-width:768px){
+    .social{
+        flex-direction: column;
+        height: auto;
+    }
+    .social1{
+        width: 70%;
+        height: 250px;
+        margin-left: 55px;
+    }
+}
